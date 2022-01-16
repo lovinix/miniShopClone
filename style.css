@@ -1,0 +1,114 @@
+:root{
+    --color-black:#3f454d;
+    --color-white:#ffffff;
+    --color-blue:#3b88c3;
+    --color-yellow:#fbbe28;
+    --color-pink:#fd7f84;
+    --color-light-grey:#dfdfdf;
+
+    --size-button:3rem;
+    --size-button-padding:0.5rem;
+    --size-button-font:1.2rem;
+    --size-button-margin:0.5rem;
+    --size-item-thumbnail:3rem;
+    --size-item-font:1.2rem;
+    --size-border-radius:5px;
+
+    --animation-duration:300ms;
+}
+
+body{
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    cursor: pointer;
+    transition: transform var(--animation-duration) ease;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: var(--size-border-radius);
+}
+
+.filters{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+}
+
+.filterBtn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    align-items: stretch;
+    cursor: pointer;
+    transition: transform var(--animation-duration) ease;
+    margin: 0 var(--size-button-margin);
+}
+
+.filterBtn:hover{
+    transform: scale(1.1);
+}
+.filterImg{
+    width: var(--size-button);
+    height: var(--size-button);
+}
+.filterColor{
+    padding: var(--size-button-padding);
+    font-size: var(--size-button-font);
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 60%;
+    list-style: none;
+    padding: 0;
+}
+
+
+.item{
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-left: 10%;
+    margin-bottom: 1rem;
+    border-radius: var(--size-border-radius);
+}
+
+.itemThumbnail{
+    width: var(--size-item-thumbnail);
+    height: var(--size-item-thumbnail);
+}
+
+.itemDescription{
+    padding-left: 5%;
+    font-size : var(--size-item-font)
+}
+
+.Blue{
+    background-color: var(--color-blue);
+}
+
+.Yellow{
+    background-color: var(--color-yellow);
+}
+
+.Pink{
+    background-color: var(--color-pink);
+}
